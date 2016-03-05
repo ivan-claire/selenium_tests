@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="175dp" android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrows"
+            android:maxHeight="2dp"
+            android:maxWidth="2dp"
+            android:id="@+id/imageView" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="PSC"
+            android:textColor="@color/purple"
+            android:textSize="10dp"
+            android:id="@+id/textView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:text="no psc"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:id="@+id/psc_value"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent" android:layout_height="30dp"
+            android:background="@drawable/side_nav_bar"
+            android:orientation="horizontal">
+
+    <ImageView android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/test"
+        android:maxHeight="2dp"
+        android:maxWidth="2dp"
+        android:id="@+id/imageView1" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="RSSI"
+        android:textColor="@color/purple"
+        android:textSize="10dp"
+        android:id="@+id/textView1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <com.testing.alcatel.alufieldtesting.TextProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:max="62"
+        android:progress="0"
+        android:layout_marginLeft="18dp"
+        android:id="@+id/progressBar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/lock"
+            android:maxHeight="2dp"
+            android:maxWidth="2dp"
+            android:id="@+id/imageView2" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="NETWORK"
+            android:textColor="@color/purple"
+            android:textSize="10dp"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="no network"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:id="@+id/network1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+

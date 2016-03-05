@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#551A8B</color>
+    <color name="colorPrimaryDark">#330033</color>
+    <color name="colorAccent">#551A8B</color>
+    <color name="white">#ffff</color>
+    <color name="list_divider">#000000</color>
+   <!-- <color name="list_background"></color> -->
+    <color name="list_item_title">#ffffff</color>
+    <color name="counter_text_color">#551A8B</color>
+    <color name="purple">#551A8B</color>
+
+</resources>

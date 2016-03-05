@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.testing.alcatel.alufieldtesting.ViewProgress"
+    android:background="@color/lavender">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+        >
+        <CheckBox
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="10dp"
+            android:text="@string/check"
+            android:visibility="gone"
+            android:id="@+id/check"
+            android:checked="true"
+            android:layout_below="@+id/btn3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <CheckBox
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:text="@string/ftpdl"
+            android:id="@+id/ftpdl"
+            android:layout_below="@+id/btn3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout10"
+            android:visibility="gone"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/bytesd" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" android:text="Bytes Transfered: " />
+
+            <TextView android:id = "@+id/dnum_bytes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/layout9"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/dtime" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" android:text="Time: " />
+
+            <TextView android:id = "@+id/dnum_time" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/layout8"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/avg_rated" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" android:text="Average Download Rate:"/>
+
+            <TextView android:id = "@+id/davg_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout6"
+            android:visibility="gone"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/peak_rated" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" android:text="Peak Download Rate:" />
+
+            <TextView android:id = "@+id/dpeak_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/layout5"
+            android:orientation="horizontal"
+            android:paddingTop="15sp">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/dprogressBar" />
+
+            <TextView android:id = "@+id/progressd" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpdl" android:text="0%" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <CheckBox
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:text="@string/ftpul"
+            android:id="@+id/ftpul"
+            android:layout_below="@+id/dprogressBar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout4"
+            android:visibility="gone"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/num_bytes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" android:text="Bytes Transfered: " />
+
+            <TextView android:id = "@+id/unum_bytes" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout3"
+            android:visibility="gone"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/utime" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" android:text="Time: " />
+
+            <TextView android:id = "@+id/unum_time" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/layout7"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/avg_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" android:text="Average Upload Rate:"/>
+
+            <TextView android:id = "@+id/uavg_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/layout2"
+            android:paddingTop="15sp">
+
+            <TextView android:id = "@+id/peak_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" android:text="Peak Upload Rate:" />
+
+            <TextView android:id = "@+id/upeak_rate" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/layout1"
+            android:paddingTop="15sp">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/uprogressBar" />
+
+            <TextView android:id = "@+id/progress" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:visibility="gone"
+                android:layout_below="@+id/ftpul" android:text="0%" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+
+        <CheckBox
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/ping"
+            android:visibility="gone"
+            android:layout_marginTop="3dp"
+            android:id="@+id/ping"
+            android:layout_below="@+id/btn3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView android:id = "@+id/ping_results" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="gone"
+            android:layout_below="@+id/pinging" android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+
+
+        <CheckBox
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/sms"
+            android:visibility="gone"
+            android:layout_marginTop="3dp"
+            android:id="@+id/sms"
+            android:layout_below="@+id/btn3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+
+        <TextView android:id = "@+id/sms_results" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:visibility="gone"
+            android:layout_below="@+id/sms" android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"/>
+        </LinearLayout>
+    </ScrollView>

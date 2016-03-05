@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="AppThemes" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#33ffffff</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/transparent</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppThemes.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Widget.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@color/purple</item>
+    </style>
+
+    <style name="Widget.ActionBar.Transparent">
+    <item name="android:background">@android:color/transparent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+    <!-- Change Overflow Menu ListView Divider Property -->
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">#33ffffff</item>
+        <item name="android:dividerHeight">1sp</item>
+        <item name="android:listSelector">@drawable/list_selector</item>
+    </style>
+
+    <!-- Change Overflow Menu ListView Text Size and Text Size -->
+    <style name="PopupMenuTextView" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">25dp</item>
+
+    </style>
+
+    <!-- Change Overflow Menu Background -->
+    <style name="PopupMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+        <item name="android:popupBackground">#33B8B8B8</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

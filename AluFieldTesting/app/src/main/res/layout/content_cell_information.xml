@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="15sp"
+    android:paddingRight="15sp"
+    app:theme="@style/AppTheme"
+    android:paddingTop="15sp"
+    android:paddingBottom="15sp"
+    tools:context="com.testing.alcatel.alufieldtesting.MobilityTests"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_marginTop="25dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text" />
+
+
+</ScrollView>

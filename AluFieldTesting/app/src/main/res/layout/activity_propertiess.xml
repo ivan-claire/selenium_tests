@@ -1,0 +1,253 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:paddingLeft="15sp"
+android:paddingRight="15sp"
+app:theme="@style/AppTheme"
+android:paddingTop="15sp"
+android:paddingBottom="15sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+
+        >
+    <TextView
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/head"
+        android:textColor="@color/purple"
+        android:id="@+id/connect"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2G Number to Call"
+            android:id="@+id/twonumber"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+            android:hint="+237 675 789 056 "
+            android:id="@+id/twonumbere"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="vertical"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3G Number to Call"
+            android:id="@+id/threenumber"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+            android:hint="695935671"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+             android:id="@+id/threenumbere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <!-- third Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4G Number to Call"
+            android:id="@+id/fournumber"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/fournumbere"
+            android:hint="695935671"
+            android:layout_marginLeft="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- fourth Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fixed Line Number to Call"
+            android:textColor="@color/purple"
+            android:id="@+id/fixednumber"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/fixednumbere"
+            android:layout_marginLeft="3dp"
+            android:hint="257780"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link to Ftp server"
+                android:id="@+id/ftplink"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ftplinke"
+                android:layout_marginLeft="3dp"
+                android:hint="10.150.2.244"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FTP Server's Username"
+                android:id="@+id/ftpuser"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:hint="4 seconds"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/ftpusere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <!-- third Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FTP Server's Password"
+                android:id="@+id/ftppass"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ftppasse"
+                android:hint="****"
+                android:layout_marginLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- fourth Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link to File to be Downloaded"
+                android:textColor="@color/purple"
+                android:id="@+id/downloadlink"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/downloadlinke"
+                android:layout_marginLeft="3dp"
+                android:hint="/home/alu_dt1/60 Mo for DL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- fourth Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/purple"
+                android:id="@+id/date"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/datee"
+                 android:layout_marginLeft="3dp"
+                android:hint="05/11/2015"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:id="@+id/btn_edit"
+            android:layout_gravity="right"
+            android:textColor="@color/purple" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/btn_save"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:textColor="@color/purple" />
+</LinearLayout>
+
+</ScrollView>

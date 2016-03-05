@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">AluFieldTesting</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rfmeasurement">Outdoor</string>
+    <string name="title_activity_forcing">Forcing Mobile Network</string>
+    <string name="title_activity_testing">Testing</string>
+    <string name="title_activity_cell_info">Cell Information</string>
+    <string name="heading">OCM ENHANCED CALL TESTING</string>
+    <string name="start">Start Test Sequence</string>
+    <string name="view">View Progress</string>
+    <string name="stop">Stop Test Sequence</string>
+    <string name="connect">mobile connected to a network?</string>
+    <string name="test_name">Test Name:</string>
+    <string name="site_name">Site Name:</string>
+    <string name="type">Type:</string>
+    <string name="comment">Comments:</string>
+    <string name="date">Date/Time:</string>
+    <string name="properties">Properties</string>
+    <string name="number">Receiver\'s Number</string>
+    <string name="host">Host to be pinged</string>
+    <string name="link">Link to server</string>
+    <string name="flink">Link to File to be downloaded</string>
+    <string name="call_duration">Duration of call</string>
+    <string name="delay">Delay between tests</string>
+    <string name="APN">APN</string>
+    <string name="edit">Edit</string>
+    <string name="head">Edit default settings </string>
+    <string name="dial">Number to dial</string>
+    <string name="iterations">Number of Iterations</string>
+    <string name="notokay">Not okay... Go back to default settings</string>
+    <!-- Nav Drawer Menu Items -->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="gsm">GSM Only</string>
+    <string name="wcdma">WCDMA Only</string>
+    <string name="both">WCDMA/GSM</string>
+    <string name="intro">Mobile Networks</string>
+    <string name="network">Force Network</string>
+    <string name="check">Network Checked</string>
+    <string name="mt">MT</string>
+    <string name="mo">MO</string>
+    <string name="ftpul">FTP UL</string>
+    <string name="ftpdl">FTP DL</string>
+    <string name="ping">Ping Test</string>
+    <string name="stream">Streaming</string>
+    <string name="sms">SMS</string>
+    <string name="iteration">Number of times to repeat test</string>
+
+    <string-array name="nav_drawer_items">
+        <item >Scrambling Code</item>
+        <item >RSCP(dbm)</item>
+        <item >EC/NO</item>
+        <item >CQI</item>
+    </string-array>
+    <string name="title_activity_stationary_tests">StationaryTests</string>
+    <string name="title_activity_mobility_tests">MobilityTests</string>
+    <string name="title_activity_propertiess">Properties</string>
+    <string name="title_activity_view_progress">ViewProgress</string>
+    <string name="title_activity_rfmeasurements">RFmeasurements</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in
+    <array name="nav_drawer_icons">
+        <item>@drawable/rf</item>
+        <item>@drawable/lock</item>
+        <item>@drawable/test</item>
+        <item>@drawable/rf</item>
+
+    </array>
+        -->
+
+
+</resources>

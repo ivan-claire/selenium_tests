@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+    <style name="Theme.TranslucentActionBar.ActionBar" />
+
+    <style name="Theme.TranslucentActionBar.ActionBar.Overlay">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="android:actionBarWidgetTheme">@style/PopupMenuTextView</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:listPreferredItemHeightSmall">40dp</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="Theme.TranslucentActionBars" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+    <style name="Theme.TranslucentActionBars.ActionBar" />
+
+
+
+</resources>

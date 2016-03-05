@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.testing.alcatel.alfieldtesting.All_tests">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:paddingTop="15sp"
+        android:paddingBottom="15sp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/connect"
+            android:textColor="@color/purple"
+            android:id="@+id/connect"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <!-- First Row -->
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_gravity="right" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_name"
+                android:id="@+id/test_name"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:hint="05/11BprisoNodalSC "
+                android:id="@+id/test_namee"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="15sp"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/site_name"
+                android:id="@+id/site_name"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <AutoCompleteTextView
+                android:hint="e.g BPrisoNodal"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/site_namee"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.81" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/site_namee"
+                android:layout_alignBottom="@id/site_namee"
+                android:layout_alignRight="@id/site_namee"
+                android:id="@+id/loading" />
+
+
+        </LinearLayout>
+
+
+        <!-- third Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:id="@+id/type"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/typee"
+                android:hint="Stationary Tests"
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+              </LinearLayout>
+
+        <!-- fourth Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:textColor="@color/purple"
+                android:id="@+id/date"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/datee"
+                android:layout_marginLeft="10dp"
+                android:hint="05/11/2015"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- fifth Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15sp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comment"
+                android:id="@+id/comment"
+                android:textSize="15sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/commente"
+                android:hint="Remarks"
+                android:inputType="textMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btnn_ok"
+            android:layout_gravity="right"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+</ScrollView>

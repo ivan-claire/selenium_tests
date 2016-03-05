@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ALU Field Testing</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_tests">All Tests</string>
+    <string name="test">Make a new test</string>
+    <string name="network">Choose network to make call to</string>
+    <string name="done">Done</string>
+    <string name="ok">Ok</string>
+    <string name="to_be_changed">3G SVR Maroua University</string>
+    <string name="check1">  2G  </string>
+    <string name="check2">  3G  </string>
+    <string name="check3">  Fixed Line </string>
+    <string name="check4">  SMS  </string>
+    <string name="title_activity_voice_calls">Voice Calls</string>
+    <string name="title_activity_automatic_mode">Automatic Mode</string>
+
+</resources>
